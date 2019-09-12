@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+    <resources xmlns:tools="http://schemas.android.com/tools">
+
+
+  <style tools:ignore="DuplicateDefinition" parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme">
+
+  <!-- Customize your theme here. -->
+
+
+  <item name="colorPrimary">@color/colorPrimary</item>
+
+  <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+  <item name="colorAccent">@color/colorAccent</item>
+
+  <item name="android:colorBackground" tools:ignore="PrivateResource">@color/background_material_light</item>
+
+  <item name="android:fontFamily">@font/sans</item>
+
+</style>
+
+
+  -<style name="AppTheme.NoActionBar">
+
+  <item name="windowActionBar">false</item>
+
+  <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+  <item name="windowNoTitle">true</item>
+
+
+  </style>
+
+  <style parent="ThemeOverlay.AppCompat.Dark.ActionBar" name="AppTheme.AppBarOverlay"/>
+
+  <style parent="ThemeOverlay.AppCompat.Light" name="AppTheme.PopupOverlay"/>
+
+  <!-- Activity with no Title -->
+
+
+
+  -<style parent="AppTheme" name="ThemeOverlay.MyNoTitleActivity">
+
+  <item name="windowActionBar">false</item>
+
+  <item name="windowNoTitle">true</item>
+
+
+</style>
+
+  <!-- Dark Buttons -->
+
+
+
+  -<style parent="ThemeOverlay.AppCompat.Dark" name="ThemeOverlay.MyDarkButton">
+
+  <item name="colorButtonNormal">@color/colorAccent</item>
+
+  <item name="android:layout_marginRight">4dp</item>
+
+  <item name="android:layout_marginLeft">4dp</item>
+
+  <item name="android:textColor">@android:color/white</item>
+
+
+</style>
+
+  <!-- Light EditTexts -->
+
+
+  <style parent="ThemeOverlay.AppCompat.Dark" name="ThemeOverlay.MyLightEditText"/>
+
+
+  -<style parent="AppTheme" name="ThemeOverlay.MyTextDetail">
+
+  <item name="android:layout_width">wrap_content</item>
+
+  <item name="android:layout_height">wrap_content</item>
+
+  <item name="android:gravity">center</item>
+
+  <item name="android:maxLines">5</item>
+
+  <item name="android:padding">4dp</item>
+
+  <item name="android:scrollbars">vertical</item>
+
+  <item name="android:textSize">14sp</item>
+
+
+</style>
+
+
+  -<style parent="AppTheme" name="ThemeOverlay.FirebaseIcon">
+
+  <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
+
+  <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
+
+
+</style>
+
+
+  -<style parent="AppTheme" name="ThemeOverlay.MyTitleText">
+
+  <item name="android:gravity">center</item>
+
+  <item name="android:textSize">36sp</item>
+
+</style>
+
+</resources>

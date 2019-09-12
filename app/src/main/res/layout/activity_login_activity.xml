@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="@string/phone_title_text"
+            android:textColor="#9A9A9A"
+
+            />
+
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/ThemeOverlay.MyTextDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/signed_out"
+            android:textColor="#9A9A9A" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"
+            style="@style/ThemeOverlay.MyTextDetail"
+            android:textColor="#9A9A9A"
+            tools:text="Firebase User ID: 123456789abc" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="4.5"
+
+        android:background="#FFFFFF"
+
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+
+            android:id="@+id/phoneAuthFields"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="1.0">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/user1" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    app:ccp_contentColor="#9A9A9A"
+                    app:ccp_flagBorderColor="#9A9A9A" />
+
+                <EditText
+                    android:id="@+id/fieldPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.0"
+                    android:backgroundTint="#9A9A9A"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="#9A9A9A"
+                    android:textSize="15dp" />
+
+
+                <EditText
+
+                    android:id="@+id/fieldVerificationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.0"
+                    android:backgroundTint="#9A9A9A"
+                    android:hint="@string/hint_verification_code"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="#9A9A9A"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="229dp"
+
+                android:orientation="vertical"
+
+                android:weightSum="1.0">
+
+
+                <Button
+                    android:id="@+id/buttonStartVerification"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/buttonshape"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:shadowColor="#9A9A9A"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="2"
+                    android:text="SEND OTP"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+
+                <Button
+
+                    android:id="@+id/buttonVerifyPhone"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/buttonshape"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:shadowColor="#9A9A9A"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="2"
+                    android:text="Verify"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"
+
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+
+                <Button
+
+                    android:id="@+id/buttonResend"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/buttonshape"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:shadowColor="#9A9A9A"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="2"
+                    android:text="Resend"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/signedInButtons"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+
+            android:paddingRight="16dp"
+
+            android:visibility="gone"
+
+            android:weightSum="1.0">
+
+
+            <Button
+
+                android:id="@+id/signOutButton"
+
+                style="@style/Widget.AppCompat.Button.Colored"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1.0"
+
+                android:text="sign out"
+
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="6.0"
+            android:gravity="center"
+            android:id="@+id/container1">
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Post"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="title"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="3dp" />
+
+
+            <EditText
+                android:id="@+id/editTextBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="body"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="3dp" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="price"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="3dp"
+                tools:ignore="DuplicateIds" />
+
+            <EditText
+                android:id="@+id/editTextImgName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="image_name"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="3dp"
+                tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+
+
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonchooseimage"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:text="Choose image" />
+
+
+            <Button
+                android:id="@+id/buttonuploadimage"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:text="Upload image" />
+
+
+            <Button
+                android:id="@+id/buttonAddPost"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:text="Add Post" />
+
+            <Button
+                android:id="@+id/buttonExit"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:text="Exit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
